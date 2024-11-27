@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+
+    <style>
+
+        *{
+          color: gray;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+             background-color: black;
+        }
+
+        footer{         
+                width:70%;
+                margin-left: 15%;
+                position: absolute;
+                bottom: 40px;
+        }
+
+        .partesuperior{                           
+                        display: flex;
+                        flex-direction: row; border: 1px dotted red;                         
+        }
+
+        .secciones{
+                   display: flex;
+                   flex-direction: row;
+                   gap: 100px;                   
+                   width: 70%;border: 3px dotted blue; 
+        }
+
+        .seccion{
+                display: flex;
+                flex-direction: column;                        
+        }
+
+        .sectionitem{
+                     display: inline;                   
+                     margin-top: 10px;
+        }
+
+        .sectiontext{
+                        font-weight: bold;
+                        font-size: 20px;
+        }
+
+        .subscripcion{
+                        width: 35%;                      
+                        display: flex;
+                        flex-direction: column;border: 3px dotted yellow;
+        }
+
+        .subscripcion p{
+                        margin: 0px;  
+                        margin-top: 10px;                    
+        }
+
+        .subscripcion p:nth-of-type(1){                                                         
+                                       margin-bottom: 5px;
+        }
+
+        .subscripcion p:nth-of-type(2){                      
+                                       margin-bottom: 10px;
+        }
+
+        form input:nth-of-type(1){
+                                  width: 300px;
+                                  height: 30px;
+                                  background-color: black;
+                                  color: gray;
+                                  border-radius: 5px; 
+        }
+
+        .botonsubmit{
+                        color:white;
+                        background-color: blue;                         
+                        width: 100px; 
+                        height: 40px; 
+                        border: 1px solid yellow;    
+                        border-radius: 5px;                                             
+        }
+
+        .botonsubmit:hover{    
+                           background-color: green;
+                           color:red;
+                           cursor: pointer;
+        }
+
+        hr{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+        }
+
+        .derechos{
+                  display: inline-block;                   
+        }
+
+        .redes{    
+               float: right;
+        }
+        
+        .redessociales{
+                        float: right;
+                        width: 30px;                        
+                        color: white;
+        }
+
+
+            
+    </style>
+
+    <title>Footer</title>
+ 
+</head>
+<body>
+    <footer>
+        <div>
+
+            <div class="partesuperior">
+
+                <div class="secciones">
+                    <section class="seccion">
+                        <div class="sectionitem sectiontext">Section</div>
+                        <div class="sectionitem">Home</div>
+                        <div class="sectionitem">Features</div>
+                        <div class="sectionitem">Pricing</div>
+                        <div class="sectionitem">FAQs</div>
+                        <div class="sectionitem">About</div>
+                    </section>
+                    <section class="seccion">
+                        <div class="sectionitem  sectiontext">Section</div>
+                        <div class="sectionitem">Home</div>
+                        <div class="sectionitem">Features</div>
+                        <div class="sectionitem">Pricing</div>
+                        <div class="sectionitem">FAQs</div>
+                        <div class="sectionitem">About</div>
+                    </section>
+                    <section class="seccion">
+                        <div class="sectionitem  sectiontext">Section</div>
+                        <div class="sectionitem">Home</div>
+                        <div class="sectionitem">Features</div>
+                        <div class="sectionitem">Pricing</div>
+                        <div class="sectionitem">FAQs</div>
+                        <div class="sectionitem">About</div>
+                    </section>
+                </div>
+
+                <div class="subscripcion">
+                    <p>Subscribe to our newsletter</p>
+                    <p>Monthly digest of what's new and exciting from us. </p>
+                    <form action="">
+                        <input type="email" placeholder="Email address">                 
+                        <input class="botonsubmit"  type="submit" value="Subscribe" >
+                    </form>                
+                </div>
+
+            </div>
+
+            <hr />
+
+            <div class="parteinferior">
+
+                <div class="derechos">
+                    © 2024 Company, Inc. All rights reserved.
+                </div>
+
+                <div class="redes">
+                    <a  class="redessociales"   href="https://web.facebook.com/" target="_blank">                     
+                        <i class="fa-brands fa-facebook"></i>
+                    </a> 
+                    <a class="redessociales"  href="https://instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>  
+                    <a class="redessociales"  href="https://x.com/" target="_blank">                     
+                        <i class="fa-brands fa-twitter"></i>
+                    </a> 
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
